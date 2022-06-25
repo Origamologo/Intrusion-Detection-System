@@ -32,3 +32,9 @@ About the packets and the attacks:<br/>
 - **Probe:** two thirds of the probe attacks run on TCP protocol and the other third on ICMP, it uses private and eco/i services and has as many Sf flags as REJected
 - **R2L:** runs exclusively on TCP protocol, uses nearly only ftp as service and recieve SF flags
 - **U2R:** runs mainly on TCP protocol, two thirds of the conections are through telnet and one third uses ftp service, and recieves mostly SF flags
+
+About the models:<br/>
+- The most succesful model seems to be the Decission Tree Classifier with a 99.1% of accuracy and 0.7 seconds of training time. Some other models are slightly more accurate, like the neuronal network with its 99.8%, but the training time is endless.
+
+# Technology
+os, pandas, numpy, matplotlib, seaborn, time, pickle, sklearn, keras, warnings
