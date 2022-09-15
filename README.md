@@ -11,7 +11,7 @@ Another bullet point would be to study different machine learning classification
 
 # Working plan
 To achive the objetives, we will follow this steps
-  1. **Develop a set of hacking:** Following the philosophy of "learn by doing", a number of hacking tools have been build, from spoofing to DoS attacks. The idea is to have a better understanding about how the attacks work designing them AND LEARNING IS THE ONE AND ONLY OBJETIVE, the tools have only been used against virtual machines hosted in my laptop. This set of tools is currently in a privated repository.
+  1. **Develop a set of hacking:** Following the philosophy of "learn by doing", a number of hacking tools have been build, from spoofing to DoS attacks, passing through trojans and priviledge scalation. The idea is to have a better understanding about how the attacks work designing them AND LEARNING IS THE ONE AND ONLY OBJETIVE, the tools have only been used against virtual machines hosted in my laptop or computers that I own. This set of tools is stored in this repository: [Paedicabo](https://github.com/Origamologo/Paedicabo.git)
   2. **Clean the data:** Clean and prepare the data in order to make in suitable for the machine learning models.
   3. **Launch ML models:** Seven models wil be tried, Gaussian Naive Bayes, Decision Tree Classifier, Random Forest Classifier, Support Vector Machine Classifier, Logistic Regression Classifier, Gradient Boost Classifier, Sequential Neuronal Network in keras.
 
