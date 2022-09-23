@@ -11,7 +11,8 @@ st.markdown(" ")
 st.markdown(" ")
 st.markdown(" ")
 
-video_file = open('/home/miguel/PycharmProjects/attackclassifier_streamlit/imagenes/oioi.mp4', 'rb')
+video_file = open('https://github.com/Origamologo/Intrusion-Detection-System/blob/main/streamlit/imagenes/oioi.mp4', 'rb')
+# video_file = open('/home/miguel/PycharmProjects/attackclassifier_streamlit/imagenes/oioi.mp4', 'rb')
 video_bytes = video_file.read()
 
 st.video(video_bytes)

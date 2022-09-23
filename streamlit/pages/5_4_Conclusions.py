@@ -31,7 +31,8 @@ original_title_3 = '<p style="text-align: left; font-family:Vengeance Bold, sans
                  '• Love pandas, hate bulling</p> '
 st.markdown(original_title_3, unsafe_allow_html=True)
 
-background = Image.open("./imagenes/panda.png")
+background = Image.open("https://github.com/Origamologo/Intrusion-Detection-System/blob/main/streamlit/imagenes/panda.png")
+# background = Image.open("./imagenes/panda.png")
 col1, col2, col3 = st.columns([0.2, 5, 0.2])
 col2.image(background, use_column_width=False, width=300)
 

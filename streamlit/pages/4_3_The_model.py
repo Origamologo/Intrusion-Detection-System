@@ -18,12 +18,14 @@ st.markdown(original_title_3, unsafe_allow_html=True)
 st.markdown(" ")
 st.markdown(" ")
 
-df = pd.read_csv(r"/home/miguel/PycharmProjects/attackclassifier_streamlit/data/df_attacks_enc.csv")
+df = pd.read_csv(r"https://github.com/Origamologo/Intrusion-Detection-System/blob/main/streamlit/data/df_attacks_enc.csv")
+# df = pd.read_csv(r"/home/miguel/PycharmProjects/attackclassifier_streamlit/data/df_attacks_enc.csv")
 df.drop(columns=['Unnamed: 0'], inplace=True)
 
 df2 = df.drop(columns=['Attack Type'], inplace=False)
 
-decission_tree = pickle.load(open('/home/miguel/PycharmProjects/attackclassifier_streamlit/data/2_dt.pkl', 'rb'))
+decission_tree = pickle.load(open('https://github.com/Origamologo/Intrusion-Detection-System/blob/main/streamlit/data/2_dt.pkl', 'rb'))
+# decission_tree = pickle.load(open('/home/miguel/PycharmProjects/attackclassifier_streamlit/data/2_dt.pkl', 'rb'))
 
 if st.button('Launch attack'):
     row = random.randint(0, 494021)
@@ -36,35 +38,41 @@ if st.button('Launch attack'):
     # st.write(df.iloc[row]['Attack Type'])
     if y == "normal" and y == df.iloc[row]['Attack Type']:
         st.markdown(f"## Calm down, that was a {y} connection")
-        background = Image.open("./imagenes/Chuckfinal.png")
+        background = Image.open("https://github.com/Origamologo/Intrusion-Detection-System/blob/main/streamlit/imagenes/Chuckfinal.png")
+        # background = Image.open("./imagenes/Chuckfinal.png")
         col1, col2, col3 = st.columns([0.2, 5, 0.2])
         col2.image(background, use_column_width=True)
     elif y == df.iloc[row]['Attack Type']:
         if y == "dos":
             st.markdown(f"## Great!!! You stopped a {y} attack")
-            background = Image.open("./imagenes/ddos.jpg")
+            background = Image.open("https://github.com/Origamologo/Intrusion-Detection-System/blob/main/streamlit/imagenes/ddos.jpg")
+            # background = Image.open("./imagenes/ddos.jpg")
             col1, col2, col3 = st.columns([0.2, 5, 0.2])
             col2.image(background, use_column_width=True)
         # st.write(row)
         elif y == "u2r":
             st.markdown(f"## Great!!! You stopped a {y} attack")
-            background = Image.open("./imagenes/Om.jpeg")
+            background = Image.open("https://github.com/Origamologo/Intrusion-Detection-System/blob/main/streamlit/imagenes/Om.jpeg")
+            # background = Image.open("./imagenes/Om.jpeg")
             col1, col2, col3 = st.columns([0.2, 5, 0.2])
             col2.image(background, use_column_width=True)
         elif y == "probe":
             st.markdown(f"## Great!!! You stopped a {y} attack")
-            background = Image.open("./imagenes/probe.jpeg")
+            background = Image.open("https://github.com/Origamologo/Intrusion-Detection-System/blob/main/streamlit/imagenes/probe.jpg")
+            # background = Image.open("./imagenes/probe.jpeg")
             col1, col2, col3 = st.columns([0.2, 5, 0.2])
             col2.image(background, use_column_width=True)
         elif y == "r2l":
             st.markdown(f"## Great!!! You stopped a {y} attack")
-            background = Image.open("./imagenes/r2l.jpeg")
+            background = Image.open("https://github.com/Origamologo/Intrusion-Detection-System/blob/main/streamlit/imagenes/r2l.jpg")
+            # background = Image.open("./imagenes/r2l.jpeg")
             col1, col2, col3 = st.columns([0.2, 5, 0.2])
             col2.image(background, use_column_width=True)
 
     else:
         st.markdown(f"## Sorry darling, you've mistaken a {y} for a {df.iloc[row]['Attack Type']}")
-        background = Image.open("./imagenes/catwoman.jpg")
+        background = Image.open("https://github.com/Origamologo/Intrusion-Detection-System/blob/main/streamlit/imagenes/catwoman.jpg")
+        # background = Image.open("./imagenes/catwoman.jpg")
         col1, col2, col3 = st.columns([0.2, 5, 0.2])
         col2.image(background, use_column_width=True)
 
