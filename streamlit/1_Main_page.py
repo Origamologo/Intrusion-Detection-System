@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+import pathlib
 
 original_title = '<p style="text-align: center; font-family:Vengeance Bold, sans-serif; color:#ddebf0; font-size: 45px;font-weight: 500"> ' \
                  'CLASSIFICATION ALGORITHMS</p> '
@@ -19,8 +20,10 @@ st.markdown(" ")
 st.markdown(" ")
 st.markdown(" ")
 
+p = pathlib.Path("eye.webp")
+background = Image.open(p)
 # background = Image.open("https://github.com/Origamologo/Intrusion-Detection-System/blob/main/streamlit/imagenes/eye.webp")
-background = Image.open("eye.webp")
+# background = Image.open("./images/eye.webp")
 col1, col2, col3 = st.columns([0.2, 5, 0.2])
 col2.image(background, use_column_width=True)
 
