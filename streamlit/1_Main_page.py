@@ -20,7 +20,7 @@ st.markdown(" ")
 st.markdown(" ")
 
 # background = Image.open("https://github.com/Origamologo/Intrusion-Detection-System/blob/main/streamlit/imagenes/eye.webp")
-background = Image.open("./imagenes/eye.webp")
+background = Image.open("/home/miguel/miguel/Ironhack/Curso/IronLabs/Intrusion-Detection-System/streamlit/imagenes/eye.webp")
 col1, col2, col3 = st.columns([0.2, 5, 0.2])
 col2.image(background, use_column_width=True)
 
